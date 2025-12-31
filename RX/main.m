@@ -35,14 +35,14 @@ fpr_g = [0; FPR]; tpr_g = [0; TPR];
 auc_g = trapz(fpr_g, tpr_g);
 
 % LRX ROC
-scores = S_lrx(:);
-[~, idx] = sort(scores, 'descend');
-y = labels(idx);
-P = sum(y==1); N = sum(y==0);
-TP = cumsum(y==1); FP = cumsum(y==0);
-TPR = TP / P; FPR = FP / N;
-fpr_l = [0; FPR]; tpr_l = [0; TPR];
-auc_l = trapz(fpr_l, tpr_l);
+% scores = S_lrx(:);
+% [~, idx] = sort(scores, 'descend');
+% y = labels(idx);
+% P = sum(y==1); N = sum(y==0);
+% TP = cumsum(y==1); FP = cumsum(y==0);
+% TPR = TP / P; FPR = FP / N;
+% fpr_l = [0; FPR]; tpr_l = [0; TPR];
+% auc_l = trapz(fpr_l, tpr_l);
 
 % 绘图
 figure('Color','w');

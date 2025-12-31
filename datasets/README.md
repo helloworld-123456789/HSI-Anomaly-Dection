@@ -12,7 +12,7 @@
 
 ---
 
-![Airport Dataset](Airport-Beach-Urban%20(ABU)/Airport%20Dataset.png)
+![Airport Dataset](Airport-Beach-Urban%20(ABU)/Airport_Dataset.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 ---
 
-![Beach Dataset](Airport-Beach-Urban%20(ABU)/Beach%20Dataset.png)
+![Beach Dataset](Airport-Beach-Urban%20(ABU)/Beach_Dataset.png)
 
 ---
 
@@ -28,13 +28,15 @@
 
 ---
 
-![Urban Dataset](Airport-Beach-Urban%20(ABU)/Urban%20Dataset.png)
+![Urban Dataset](Airport-Beach-Urban%20(ABU)/Urban_Dataset.png)
 
 ---
 
 
 ## 2. Nuance Cri
 位于 `datasets/Nuance Cri/`
+
+**同样，mat文件中，包含data和map两个变量，前者表示原始的三维HSI数据，后者表示真实地物标签（异常是1，背景是0）。**
 
 - **传感器**：Nuance Cri 高光谱传感器。
 - **场景**：草地上的岩石。
@@ -58,6 +60,14 @@
 - **文件**：
     - `PaviaC.mat`：高光谱数据。
     - `PaviaC_gt.mat`：地面真值 (Ground Truth)。
+
+该数据集较大，此处不予展示完整部分（下载地址为：https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes  ）。
+
+注意原数据中的变量分别为paviaU和paviaU_gt，前者还是三维数据，后者表示的是地物，标签1-9代表9类地物（具体见前面的网址）。
+
+
+需要强调的是，该数据集是被切割过的。
+
 
 ## 4. Pavia University (PaviaU)
 位于 `datasets/PaviaU/`
